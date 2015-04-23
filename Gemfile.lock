@@ -36,6 +36,7 @@ GEM
       minitest (~> 5.1)
       thread_safe (~> 0.3, >= 0.3.4)
       tzinfo (~> 1.1)
+    addressable (2.3.8)
     arel (6.0.0)
     base_indexer (0.3.5)
       discovery-indexer
@@ -89,6 +90,9 @@ GEM
     docile (1.1.5)
     domain_name (0.5.24)
       unf (>= 0.0.5, < 1.0.0)
+    dor-fetcher (1.1.7)
+      addressable
+      rest-client
     equivalent-xml (0.6.0)
       nokogiri (>= 1.4.3)
     erubis (2.7.0)
@@ -245,13 +249,15 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  base_indexer
+  base_indexer (>= 0.3.3)
   capistrano (~> 3.0)
   capistrano-bundler
   capistrano-rails
   capistrano-rvm
   coffee-rails (~> 4.1.0)
   coveralls
+  discovery-indexer (>= 0.8)
+  dor-fetcher (>= 1.1.1)
   equivalent-xml
   jbuilder (~> 2.0)
   jquery-rails
